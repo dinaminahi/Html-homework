@@ -1,0 +1,79 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Social poll</title>
+</head>
+
+<body>
+  <h1>This is a social poll about books</h1>
+  <p>Please, answer honestly!</p>
+
+
+  <form method="POST" action="https://formspree.io/diankagrechukh@gmail.com">
+
+    <label>Do you like reading books?</label><br>
+    <label><input type="radio" name="liking" value="yes">Yes</label>
+    <label><input type="radio" name="liking" value="no">No</label>
+
+    <br>
+
+    <label>What is your gender?</label> <br>
+    <label><input type="radio" name="gender" value="male">Male</label>
+    <label><input type="radio" name="gender" value="female">Female</label>
+    <label><input type="radio" name="gender" value="other">Other</label>
+
+    <br>
+
+    <label>What are your favourite genres?</label> <br>
+    <label><input type="checkbox" value="Fantasy">Fantasy</label>
+    <label><input type="checkbox" value="Science-fiction">Science fiction</label>
+    <label><input type="checkbox" value="Western">Western</label>
+    <label><input type="checkbox" value="Romance">Romance</label>
+    <label><input type="checkbox" value="Thriller">Thriller</label>
+    <label><input type="checkbox" value="Mystery">Mystery</label>
+    <label><input type="checkbox" value="Detective-story">Detective story</label>
+    <label><input type="checkbox" value="Dystopia">Dystopia</label>
+
+    <br>
+
+    <label>What is your favourite book? <input type="text"></label>
+
+    <br>
+
+    <label>What colour of book's cover do you like? <input type="color"></label>
+
+    <br>
+
+    <label for="character">Choose character with whome will you read the book:</label>
+    <select id="character">
+      <option value="">--Please choose an option--</option>
+      <option value="killer">Killer</option>
+      <option value="dog">Dog</option>
+      <option value="little-girl">Little girl</option>
+    </select>
+
+    <br>
+
+    <label>How much books do read during one month? <input type="number" name="amount-of-books" min="0"></label>
+
+    <br>
+
+    <label>When did you start to red your last book? <input type="date" name="book-start"></label>
+
+    <br>
+
+    <label>Enter your email, please: <input type="email"></label>
+
+    <br>
+
+    <input type="submit">
+
+  </form>
+
+</body>
+
+</html>
